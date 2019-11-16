@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<title>Shaun and joey are awesome</title>
+<style> 
+div {
+  background-color:aqua ;
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: purple;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #ea2B12;
+}
+#title {
+background-color:"blue"}
+</style>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+Cool Picture
+
+<div id="title">
+  <h1>JOEY</h1>
+  <p>Welcome to this website, have a nice day, please dont leave im lonely.
+  <a target="_blank" href="https://www.google.com">Google</a> link.</p>
+</div>
+
+<form>
+	Name:<input type="text" id="name"><br>
+	Age:<input type="number" id="age"><br>
+	<input type="button" id="okbutton" value="Do it">
+</form>
+<div id="something"></div>
+<script>
+	$(function() {
+		var happy = [];
+		console.log(happy);
+		$('#okbutton').click(function(){
+			happy.push($('#name').val());
+			$('#something').html(happy);
+		});
+		
+	});
+	
+</script>
+
+
+
+</body>
+</html>
